@@ -26,3 +26,18 @@
     </table>
 </body>
 </html>
+
+<!doctype html>
+<html>
+<head><title>Résultats de la Recherche</title></head>
+<body>
+  <h2>Résultats de la Recherche</h2>
+  <ul>
+  {% for row in data %}
+    <li>{{ row }}</li>
+  {% endfor %}
+  </ul>
+  <a href="{{ url_for('fiche_nom') }}">Nouvelle Recherche</a>
+</body>
+</html>
+
